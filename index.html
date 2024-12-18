@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="butterfly butterfly1"></div>
+        <div class="butterfly butterfly2"></div>
+        <div class="butterfly butterfly3"></div>
+        <div class="butterfly butterfly4"></div>
+    </div>
+
+    <div class="form-container">
+        <h2>فرم ثبت نام کتابخانه</h2>
+        <p>Complete the form below to register for classes.</p>
+        <form id="registration-form">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">نام و نام خانوادگی</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">شماره تلفن</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">تاریخ تولد</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>جنسیت</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="مرد" required> مرد</label>
+                    <label><input type="radio" name="gender" value="زن"> زن</label>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-group">
+                <label for="interests">علایق</label>
+                <select id="interests" name="interests" multiple>
+                    <option value="Sports">ورزش</option>
+                    <option value="Music">موزیک</option>
+                    <option value="Art">هنر</option>
+                    <option value="Science">Science</option>
+                    <option value="Technology">تکنولوژی</option>
+                </select>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">آدرس</label>
+                <textarea id="address" name="address" placeholder="Enter your address" rows="3"></textarea>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="form-group">
+                <label for="profile-pic">ارسال عکس پروفایل</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            </div>
+
+          <a href="form.html"> <button type="button" onclick="submitForm()">Submit</button></a> 
+        </form>
+    </div>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
